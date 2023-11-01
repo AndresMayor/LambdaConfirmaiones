@@ -28,7 +28,7 @@ jobs:
     - name: Deploy Lambda
       run: |
         aws configure set region us-east-1
-        aws lambda update-function-code --function-name lambda-0 --zip-file fileb://latest-lambda-code.zip
+        aws lambda update-function-code --function-name lambda0 --zip-file fileb://latest-lambda-code.zip
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
